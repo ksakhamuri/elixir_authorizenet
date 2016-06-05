@@ -5,4 +5,5 @@ config :elixir_authorizenet,
   environment: :test,
   validation_mode: :none, # :test, :live, or :none
   login_id: "login_id",
-  transaction_key: "transaction_key"
+  transaction_key: "transaction_key",
+  mix_env: :test

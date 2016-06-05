@@ -84,7 +84,7 @@ defmodule AuthorizeNet do
   end
 
   defp uri() do
-    if Mix.env === :test do
+    if config(:mix_env) && config(:mix_env) === :test do
       config :test_server_uri
     else
       @uris[config(:environment)]
